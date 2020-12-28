@@ -1,9 +1,6 @@
 package net.skhu.demospringmvc.mvcExam;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class SampleController {
@@ -18,5 +15,15 @@ public class SampleController {
         return "hello "+ person.getName();
     }
 
+    //HTTP 메시지 컨버터 사용하기
+    @GetMapping("/message")
+    public String message(@RequestBody String body) {
+        return body;
+    }
+
+    @GetMapping("/jsonMessage")
+    public Person jsonMessage(@RequestBody Person person) {
+        return person;
+    }
 
 }
