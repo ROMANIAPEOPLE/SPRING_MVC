@@ -1,4 +1,4 @@
-package net.skhu.demospringmvc.mvc활용;
+package net.skhu.demospringmvc.다양한ResutfulAPI;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,7 +1,7 @@
 package net.skhu.demospringmvc.mvcExam;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import net.skhu.demospringmvc.mvc활용.SampleController2;
+import net.skhu.demospringmvc.다양한ResutfulAPI.SampleController2;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,8 +10,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-
-import java.net.http.HttpHeaders;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
